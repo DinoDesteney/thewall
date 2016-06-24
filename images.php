@@ -1,9 +1,10 @@
 <?php
 $sql = "SELECT ID, link, title, description, tag, userup FROM uploads";
 $results = $conn->query($sql);
-foreach($results as $result){
+
+while($result = $results->fetch_assoc()){
     $id = $result['ID'];
-   $link =  $result['link'];          
+   $link =  $result['link']; 
    $title = $result['title'];
    $description = $result['description'];
    $tag = $result['tag']; 

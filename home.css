@@ -148,7 +148,7 @@ main img {
 @media screen and (min-width:1000px) {
     
     nav>ul>li {
-        width: 11.05em;
+        width: 13.13em;
         padding: .3em 1.2em;
         box-sizing: content-box;
     }
