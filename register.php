@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Random site</title>
+    <title>The Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -36,10 +36,9 @@
     <h1>Register</h1>
     
     <form action="process_registration.php" method="post" id="register">
-        Username: <input type="text" name="user"></input><br>
-        Password: <input type="password" name="pwd"></input><br>
-    <input type="submit"></input>
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="pwd"><br>
+    <input type="submit">
     </form>
-</center>
 </body>
 </html>

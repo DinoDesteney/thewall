@@ -47,7 +47,7 @@ if ($uploadOk == 0) {
        $sql = "INSERT INTO uploads (link, title, description, tag, userup) VALUES ('$target_file', '$title', '$desc', '$tag', '$login_user')";
         if ($conn->query($sql) === TRUE) {
         echo "info updated";
-        header("Refresh: 3; index.php");
+        header("Refresh: 3; users.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -56,3 +56,42 @@ if ($uploadOk == 0) {
     }
 }
 ?>
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>The Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Desteney Bader">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <h1>The Wall</h1>
+      <label for="verbergMenu" id="labelMenutoggle">Menu    <i class="fa fa-bars"></i></label>
+    <input type="checkbox" id="verbergMenu">  
+<?php
+    include ("nav.php");
+ ?>
+    <br>
+  
+    <div id="slider">
+                <figure>
+                    <img src="image/banner/IMG_0004.JPG" alt="">
+                    <img src="image/banner/IMG_0005.JPG" alt="">
+                    <img src="image/banner/IMG_0007.JPG" alt="">
+                    <img src="image/banner/IMG_0008.JPG" alt="">
+                    <img src="image/banner/IMG_1318.JPG" alt="">
+                </figure>
+            </div>
+    
+<h1>Upload</h1>
+
+</body>
+</html>

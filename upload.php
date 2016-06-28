@@ -4,7 +4,7 @@ include("check.php");
 <!doctype html>
 <html>
 <head>
-    <title>Random site</title>
+    <title>The Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -33,18 +33,24 @@ include("check.php");
                     <img src="image/banner/IMG_1318.JPG" alt="">
                 </figure>
             </div>
-    
-
+    <h1>Upload your images</h1>
+<center>
 <div class="upload">
-     <h1>Upload your images</h1>
+     
      <form action="upload2.php" method="post" enctype="multipart/form-data">
          Select image to upload:
-      <input type="text" name="title" required="required "/>
-               <input type="text" name="description" required="required "/>
-      <input type="text" name="tag" required="required "/>
+         <h3>Title</h3>
+      <input type="text" name="title" required="required " />
+         <h3>Description</h3>
+               <input type="text" name="description" required="required " />
+         <h3>Tags</h3>
+      <input type="text" name="tag" required="required " />
+         <br>
          <input type="file" name="fileToUpload" id="fileToUpload">
+         <br>
          <input type="submit" value="Upload Image" name="submit">
      </form>
+    </center>
 </div>
 
 </body>

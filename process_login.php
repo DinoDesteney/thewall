@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Random site</title>
+    <title>The Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -30,10 +30,82 @@
                     <img src="image/banner/IMG_1318.JPG" alt="">
                 </figure>
             </div>
+    <br>
+<center>
+    <form method="get" action="upload.php">
+        <button class="btn" link="upload.php" >Uploaden? Klik hier</button>
+    </form>
+    </center>
+<style>
+.btn {
+  background: #00e1ff;
+  background-image: -webkit-linear-gradient(top, #00e1ff, #000000);
+  background-image: -moz-linear-gradient(top, #00e1ff, #000000);
+  background-image: -ms-linear-gradient(top, #00e1ff, #000000);
+  background-image: -o-linear-gradient(top, #00e1ff, #000000);
+  background-image: linear-gradient(to bottom, #00e1ff, #000000);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #061629;
+  font-family: Arial;
+  color: #c7e5ff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+
+}
+
+</style>
+    <br>
+<center>
+    <form method="get" action="users.php">
+        <button class="button" link="users.php" >Andere mensen hun uploads zien? Klik hier</button>
+    </form>
+    </center>
+<style>
+.button {
+  background: #00e1ff;
+  background-image: -webkit-linear-gradient(top, #00e1ff, #000000);
+  background-image: -moz-linear-gradient(top, #00e1ff, #000000);
+  background-image: -ms-linear-gradient(top, #00e1ff, #000000);
+  background-image: -o-linear-gradient(top, #00e1ff, #000000);
+  background-image: linear-gradient(to bottom, #00e1ff, #000000);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #061629;
+  font-family: Arial;
+  color: #c7e5ff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+
+}
+</style>
     
-<h1>Je bent ingelogd</h1>
-
-
 </body>
 </html>
 
@@ -94,9 +166,8 @@ if($result->num_rows > 0) {
  echo "Yeah ingelogd";
     $_SESSION['login']=true;
     $_SESSION['name'] = $naam;
-    echo var_dump ($_SESSION['name']);
     }else{
-echo "0 results";
+echo "Je account bestaat niet";
 }
 $conn->close();
     ?>

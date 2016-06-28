@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Random site</title>
+    <title>The Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -36,11 +36,13 @@
     
 <h1>Log in</h1>
     <form action="process_login.php" method="post" id="LogIn">
-        Username: <input type="text" name="user"></input><br>
-        Password: <input type="password" name="pwd"></input><br>
-    <input type="submit"></input>
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="pwd"><br>
+    <input type="submit">
+        <br>
+        <a href="register.php">Nog geen account?</a>
     </form>
     
-    <a href="register.php" id="LogIn">Nog geen account?</a>
+    
 </body>
 </html>

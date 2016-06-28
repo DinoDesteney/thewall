@@ -31,14 +31,14 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
+	background: #0040FF;
+	color: #58FAF4;
 }
 
 .grid figcaption h3 {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #0B0B61;
 }
 
 .grid figcaption span:before {
