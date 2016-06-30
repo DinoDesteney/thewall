@@ -38,7 +38,7 @@
         <br>
 
     <form method="get" action="LogIn.php">
-        <button class="button2" formaction="LogIn.php" >Inloggen? Klik hier</button>
+        <button class="button2" id="button2" formaction="LogIn.php" >Inloggen? Klik hier</button>
     </form>
 
   
