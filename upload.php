@@ -34,24 +34,22 @@ include("check.php");
                 </figure>
             </div>
     <h1>Upload your images</h1>
-<center>
-<div class="upload">
+
+<div class="upload" id="upload">
      
      <form action="upload2.php" method="post" enctype="multipart/form-data">
          Select image to upload:
          <h3>Title</h3>
-      <input type="text" name="title" required="required " />
+      <input type="text" name="title" required />
          <h3>Description</h3>
-               <input type="text" name="description" required="required " />
+               <input type="text" name="description" required />
          <h3>Tags</h3>
-      <input type="text" name="tag" required="required " />
+      <input type="text" name="tag" required />
          <br>
          <input type="file" name="fileToUpload" id="fileToUpload">
          <br>
          <input type="submit" value="Upload Image" name="submit">
      </form>
-    </center>
 </div>
-
 </body>
 </html>

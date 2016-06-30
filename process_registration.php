@@ -1,22 +1,8 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>
-        Register
-    </title>
-</head>
-
-<body>
-    
-</body>
-
-</html>
-<!doctype html>
-<html>
-<head>
-    <title>The Wall</title>
+    <title>The Wall Register</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -50,42 +36,11 @@
     
 <h1>Je heb een account</h1>
         <br>
-<center>
+
     <form method="get" action="LogIn.php">
-        <button class="button2" link="users.php" >Inloggen? Klik hier</button>
+        <button class="button2" formaction="LogIn.php" >Inloggen? Klik hier</button>
     </form>
-    </center>
-<style>
-.button2 {
-  background: #00e1ff;
-  background-image: -webkit-linear-gradient(top, #00e1ff, #000000);
-  background-image: -moz-linear-gradient(top, #00e1ff, #000000);
-  background-image: -ms-linear-gradient(top, #00e1ff, #000000);
-  background-image: -o-linear-gradient(top, #00e1ff, #000000);
-  background-image: linear-gradient(to bottom, #00e1ff, #000000);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  text-shadow: 1px 1px 3px #061629;
-  font-family: Arial;
-  color: #c7e5ff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
 
-}
-
-.button2:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-
-}
-</style>
   
 <?php
     if ( !isset($_POST["user"]) || !isset($_POST["pwd"]) )

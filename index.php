@@ -34,13 +34,13 @@
     
 <h1>Home</h1>
 
-    <center>
+ <div id="imagesHome"> 
 <img id="myImg" src="image/Home/IMG_9952.JPG" alt="Harry" width="300" height="200">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">×</span>
-  <img class="modal-content" id="img01">
+  <img class="modal-content" id="img01" alt="" src="image/Home/IMG_9952.JPG">
   <div id="caption"></div>
 </div>
     <script>
@@ -79,9 +79,6 @@ span.onclick = function() {
 <img src="image/Home/IMG_2236.JPG" id="Home6" alt="Sil">
 <img src="image/Home/IMG_0008.JPG" id="Home7" alt="Harry en Cosman">
 <img src="image/Home/IMG_1092.JPG" id="Home8" alt="Bickel2">
-        
-
-
-    </center>
+    </div>
 </body>
 </html>
